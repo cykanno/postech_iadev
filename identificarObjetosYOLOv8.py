@@ -12,9 +12,9 @@ from email import encoders
 
 
 # Substitua com suas credenciais e informações
-remetente = "cykanno@gmail.com"  # Seu e-mail GMail
-senha = "jtzq ugxp rxaw ciul"            # Sua senha GMail (ou senha de aplicativo se a autenticação de dois fatores estiver ativada)
-destinatario = "floresfacilecom@gmail.com" # E-mail do destinatário
+remetente = "remetente@gmail.com"  # Seu e-mail GMail
+senha = "senha"            # Sua senha GMail (ou senha de aplicativo se a autenticação de dois fatores estiver ativada)
+destinatario = "destinatario@gmail.com" # E-mail do destinatário
 assunto = "Assunto do E-mail"
 corpo = """
 <html>
@@ -71,7 +71,6 @@ def processarVideo(video, model):
             break
 
         # Realiza a detecção de objetos no frame
-        # results = model.predict(img, conf=0.2, iou=0.3)
         results = model.predict(img)
 
         # Anota os resultados no frame
